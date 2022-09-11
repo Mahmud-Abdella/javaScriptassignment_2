@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let employee = [
+        {
+          id: 1,
+          name: "John",
+          age: 30,
+          designation: "manager",
+          salray: 68000,
+          phone: 6779889090,
+        },
+        {
+          id: 1,
+          name: "Jack",
+          age: 35,
+          designation: "accountant",
+          salray: 38000,
+          phone: 6779889090,
+        },
+        {
+          id: 2,
+          name: "Jess",
+          age: 60,
+          designation: "accountant",
+          salray: 80000,
+          phone: 9479889090,
+        },
+        {
+          id: 3,
+          name: "Anitta",
+          age: 25,
+          designation: "designer",
+          salray: 50000,
+          phone: 92547356090,
+        },
+        {
+          id: 4,
+          name: "Kaleb",
+          age: 47,
+          designation: "casher",
+          salray: 60000,
+          phone: 90889090,
+        },
+        {
+          id: 5,
+          name: "Christain",
+          age: 55,
+          designation: "auditor",
+          salray: 45000,
+          phone: 98889090,
+        },
+        {
+          id: 6,
+          name: "Ahmad",
+          age: 29,
+          designation: "developer",
+          salray: 78000,
+          phone: 3876889090,
+        },
+        {
+          id: 7,
+          name: "Franco",
+          age: 36,
+          designation: "planner",
+          salray: 64000,
+          phone: 909889090,
+        },
+        {
+          id: 8,
+          name: "Laura",
+          age: 40,
+          designation: "developer",
+          salray: 70000,
+          phone: 129889090,
+        },
+      ];
+
+      let filterEmployee = employee.filter(
+        (employee) => (employee.designation = "developer")
+      );
+      console.log(filterEmployee);
+
+      filterEmployee = employee.filter((employee) => employee.age < 30);
+      console.log(filterEmployee);
+
+      filterEmployee = employee.filter(
+        (employee) => employee.age < 30 && employee.salary > 70000
+      );
+      console.log(filterEmployee);
+
+      let findEmployee = employee.filter(
+        (employee) =>
+          (employee.designation = "accountant" && employee.salary < 40000)
+      );
+      console.log(findEmployee);
+
+      findEmployee = employee.filter((employee) => employee.id == 5);
+      console.log(findEmployee);
+
+      filterEmployee = employee.filter((employee) => employee.name == "Jess");
+      console.log(findEmployee);
+    </script>
+  </body>
+</html>
