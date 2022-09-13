@@ -88,15 +88,15 @@
       );
       console.log(filterEmployee);
 
-      let findEmployee = employee.filter(
+      let findEmployee = employee.find(
         (item) => item.designation == "accountant" && item.salary < 40000
       );
       console.log(findEmployee);
 
-      findEmployee = employee.filter((item) => item.id == 5);
+      findEmployee = employee.find((item) => item.id == 5);
       console.log(findEmployee);
 
-      filterEmployee = employee.filter((item) => item.name == "Jess");
+      filterEmployee = employee.find((item) => item.name == "Jess");
       console.log(findEmployee);
     </script>
   </body>
